@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Url App</string>
+    <string name="url_name"> google</string>
+    <string name="url">https://www.google.com</string>
+    <string name="view">View Url</string>
+    <string name="add">Add Url</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">no</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="view_in_browser">View in Browser</string>
+    <string name="close_the_application">Are you sure? This will close the application</string>
+    <string name="click_me">Click Me!</string>
+    <string name="oops">Opps!</string>
+</resources>

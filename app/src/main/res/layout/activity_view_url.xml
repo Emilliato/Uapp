@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.simpledev.leo.uapp.ViewUrl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bodyPrimary"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/general_padding">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/image"
+                 android:layout_width="match_parent"
+                 android:src="@mipmap/background"
+                 android:scaleType="center"
+                 android:layout_height="240dp"
+                 android:contentDescription="TODO"
+                 tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="serif"
+                    android:padding="@dimen/padding_small"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/image"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="Smart way of keeping important links"
+                    android:layout_centerHorizontal="true"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:padding="@dimen/padding_small"
+                android:background="@android:color/holo_green_light"
+                android:layout_marginBottom="@dimen/marginMedium"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvUrlName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                    tools:text="Url Name" />
+
+                <TextView
+                    android:id="@+id/tvUrl"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    android:text="@string/view_in_browser" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/bodySecondary"
+                android:paddingBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt_edit"
+                    android:background="@android:color/holo_blue_light"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="@string/edit"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/bt_delete"
+                    android:text="@string/delete"
+                    android:background="@android:color/holo_blue_light"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

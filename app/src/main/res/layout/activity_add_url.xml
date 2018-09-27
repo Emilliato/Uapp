@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyPrimary"
+    tools:context="net.simpledev.leo.uapp.AddUrl"
+    tools:ignore="Overdraw">
+   <ScrollView
+       android:layout_centerVertical="true"
+       android:padding="@dimen/general_padding"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <EditText
+             android:id="@+id/et_url_name"
+             android:hint="@string/url_name"
+             android:padding="@dimen/padding_small"
+             android:background="@android:color/holo_green_light"
+             android:textColorHint="@android:color/white"
+             android:textColor="@android:color/white"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="@dimen/general_padding"
+             android:layout_height="wrap_content" />
+         <EditText
+             android:id="@+id/et_url"
+             android:hint="@string/url"
+             android:padding="@dimen/padding_small"
+             android:layout_width="match_parent"
+             android:background="@android:color/holo_green_light"
+             android:textColorHint="@android:color/white"
+             android:textColor="@android:color/white"
+             android:layout_marginBottom="@dimen/general_padding"
+             android:layout_height="wrap_content" />
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <Button
+                  android:id="@+id/bt_save"
+                  android:text="Save"
+                  android:layout_margin="@dimen/general_padding"
+                  android:layout_centerInParent="true"
+                  android:background="@color/colorPrimaryDark"
+                  android:textColor="@android:color/white"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:ignore="HardcodedText" />
+          </RelativeLayout>
+     </LinearLayout>
+   </ScrollView>
+
+
+</RelativeLayout>
